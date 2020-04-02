@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic');
+
+$mon : 'Montserrat', ;
+$ro: 'Roboto', ;
+
+//colors
+$black:#000000;
+
+@import "_header";
+@import "_footer";
+
+
+
+
+
+// main styles
+
+a, a:hover {
+	text-decoration: none;
+}
+
+
+ul {
+	margin: 0;
+	padding: 0;
+
+	li {
+		list-style: none;
+	}
+}
+
+textarea {
+	resize: none;
+}
+
+
+body {
+	// background-color: $lightBlue;
+	font-family: $ro;
+	font-style: normal;
+	font-weight: 500;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.btn{
+    float: right;
+    
+    position: relative;
+
+    bottom: 120px;
+    
+
+    width: 199px;
+    height: 41px;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+
+    background-color: rgb(150, 32, 144);
+    
+    
+    font-family: $mon;
+	font-style: normal;
+	font-weight: 400;
+    font-size: 18px;
+
+    padding-top: 8px;
+    padding-left: 15px;
+    a{
+        color: #ffffff;
+        &:hover {
+            color: $black;
+        }
+    }
+}
